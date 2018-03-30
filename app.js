@@ -7,9 +7,12 @@ var express = require('express'),
     LocalStrategy = require('passport-local'),
     passportLocalMongoose = require('passport-local-mongoose'),
     methodOverride = require('method-override'),
+    paypal = require('paypal-rest-sdk'),
     port = process.env.port || 8080,
     dbUrl = process.env.DATABASEURL || "mongodb://localhost/landing";
-    indexRoutes = require('./routes/index');
+    indexRoutes = require('./routes/index'),
+    paypalClientId = process.env.PAYPALCLIENT,
+    paypalSecret = process.env.PAYPALSECRET;
 
 // ===================
 // Mongoose Config
@@ -24,6 +27,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
+
+// ===================
+// PayPal Config
+// ===================
+paypal.configure({
+    mode: 'sandbox', // Sandbox or live
+    client_id: paypalClientId,
+    client_secret: paypalSecret});
 // ===================
 // Routes Config
 // ===================
