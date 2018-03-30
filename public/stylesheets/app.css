@@ -53,7 +53,7 @@ li.galleryItem{
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: imageAnimation 30s linear infinite;
+    animation: imageAnimation 20s linear infinite;
     
 }
 
@@ -63,12 +63,12 @@ li.galleryItem{
 }
 .galleryItem:nth-child(2){
     background-image: url('https://lh3.googleusercontent.com/BYP91PJ2TiURwwJisTPl8EbGHl7VAb65-N-pa2BxQyrvSQSp9c7eJSiZ9uxcIXUF1CK13WAZp0QjMdDo0MYEJuV6nDbncFrwvO7UnBKPZqzLKWuNv0JDp35nZxEbOLXnKhLs6wKCUz0GVEzyAMYr-QuhHCVHA-VasEhzQMpmKqpB5dVwyPBBuMP00BQ7FpYSox34pjhJi8GSR9wLI3iinibqE2SEB2PMDKa3qLA3jBvTpXpWmJ7Rdk-Y7P5WMh3YcMhrohb0HcdT1MweoJjmyc0XUEmjZyDozf7-ZnPqRiyP3nEz_X_e2I7NikswqTM4-VonddifmHlELZDZGM0th3s9Rde43n5iRlcExqkJtytjoUQ-CUX_F1lT9k8qcBoY8eI0_Mn0gfmOVGzaoa03q2MNjz25c0AtTMj7AB82Yi10IXudVR7e_LLUlY2NpkLE1cMJTHMiQfiu6RVdMf2Kez-R_RTlK1giCQrwVyCtqosL7HvmZBgz9q5C9WSS3ToZl5JzyUyIIp1Nqk-pAJg6-k_EWZT9HRN_88L9pgW3V5-1xiAD6UPxJxiJ-Q2rgU4TtpiyxPZ_mJtnDTdgZ4wNomc3U3aHgPcbHW0JR0w=w1759-h989-no');
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 
 .galleryItem:nth-child(3){
     background-image: url('https://lh3.googleusercontent.com/-OrJC5PJNHy5QgiUCiznj2BAuRIa1rFRjDa3PdrAMm6oz9xI9pTKBp6Tksb7cBLlBPL9SJF7i1VmqJdY-NG68MQepc00_es8FJlasPv7YXmCHKkiS2VEglwXJRoxilAlv2rUT5IxHBME6I69dV1ZNkkLdc9RLOfw5AGZOOD279f61TGcZCBkwELoEWw-zM-Dg4_GlDMjq-Au6xVDyKxo9JPUlN_RsZYp2aB9WWDYXlWUKh_ZCFaWGt313v8Uzc1PIJLjpKL40aWVe3RhfGB26eiBsUDdS_smUESHLSRDgSwJQ1m-Gf7zh8IQjSToVM_y_78jKJVy8OX8O4vzFIsl5IbV_CX3YxWUERjp-kIt99oVgONpuUGYGINYeGjUD1XtUSKdFglyahGONhPVPqvbvuM6dWJc7ekhE0qM8Gv6syZTjMJ2O4C8wP_Vpl5WrYIoSDVRH0S6D3-JnRQVofoDAhWTVTyFQ-WFiu_DCpsYW2eU87GtQZjHI52rLhB4SKtlZZKsXovIhen5tAyi56YvIenwaxVNayGpxlNPvitO-GliE_4enKKC-7IsVqFmV69cB6YnzH2G9k3VLRthKrnTbklq4781EF-AM60FQWU=w1759-h989-no');
-    animation-delay: 20s;
+    animation-delay: 12s;
 }
 
 @keyframes imageAnimation{
@@ -79,10 +79,10 @@ li.galleryItem{
     10%{
         opacity: 1;
     }
-    20%{
+    40%{
         opacity: 1;
     }
-    30%{
+    50%{
         opacity: 0;
         animation: ease-out
     }
