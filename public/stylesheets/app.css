@@ -3,7 +3,7 @@
 }
 html, body{
     width:100%;
-    height: 100%;
+    height: auto;
 }
 
 body{
@@ -12,9 +12,9 @@ body{
 
 .main{
     position: relative;
-    width: 500px;
-    margin: 40vh auto;
-    height: auto;
+    width: 90%;
+    margin: 0 0 0 0;
+    height: 30vh;
     text-align: center;
     z-index: 100;
     color: #fff
@@ -52,6 +52,7 @@ li.galleryItem{
     opacity: 0;
     z-index: 1;
     background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
     animation: imageAnimation 20s linear infinite;
     
@@ -87,4 +88,74 @@ li.galleryItem{
         animation: ease-out
     }
 
+}
+
+.ui.stackable.grid{
+    margin-top: 10vh;
+}
+.ui.grid>.column:not(.row){
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.ui.grid>.stackable.stackable.row>.column, .ui.stackable.grid>.column.grid>.column, .ui.stackable.grid>.column.row>.column, .ui.stackable.grid>.column:not(.row), .ui.stackable.grid>.row>.column, .ui.stackable.grid>.row>.wide.column, .ui.stackable.grid>.wide.column{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+.main{
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 50px;
+    margin: 0px;
+    min-height: 30vh;
+    height:auto;
+    background-color: rgba(59, 59, 59, 0.5);
+    border: 1px solid rgba(66, 66, 66, 0.5);
+    border-radius: 5%;
+    text-align: center;
+}
+.main hr{
+    opacity: 0.2;
+    padding: 0 50px 0 50px;
+}
+
+.main p{
+    font-size: 18px;
+}
+
+.ui.stackable.centered.grid{
+    padding-top:100px;
+}
+
+#product{
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+#title{
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+.rounded{
+    border-radius: 20%;
+}
+
+.huge.cc.paypal.icon{
+    color: #009cde!important;   
+    display: inline;
+    margin: 0px;
+    transition: color 0.4s ease-in-out;
+}
+
+.huge.cc.paypal.icon:hover{
+    color:#027baf!important;
+}
+
+#emailInputWidth{
+    width: 40%;
+    transition: all 0.4s ease-in;
+}
+
+#emailInputWidth:focus{
+    width: 60%;
 }
